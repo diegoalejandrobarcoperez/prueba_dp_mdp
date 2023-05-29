@@ -174,7 +174,7 @@ def tarea_programada_8():
     except Exception as e:
         logging.info('[ERROR]: No se ha ejecutado la tarea de las 8:00 AM')
 
-schedule.every().day.at("08:00").do(tarea_programada_8)
+schedule.every().day.at("00:00").do(tarea_programada_8)
 
 
 
@@ -244,7 +244,7 @@ def tarea_programada_10():
     except Exception as e:
         logging.info('[ERROR]: No se ha ejecutado la tarea de las 10:00 AM')
 
-schedule.every().day.at("10:00").do(tarea_programada_10)
+schedule.every().day.at("02:10").do(tarea_programada_10)
 
 while True:
     schedule.run_pending()

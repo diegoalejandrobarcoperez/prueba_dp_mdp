@@ -1,3 +1,4 @@
+INSERT INTO punto_3 (segmento, num_tj_deb_maes)
 SELECT Cstr(Clientes.segmento) AS segmento, CLNG(COUNT(Tarjetas.tjnrotrj)) AS num_tj_deb_maes
 FROM Clientes
 INNER JOIN Tarjetas ON Cstr(Clientes.num_doc) = Cstr(Tarjetas.tjnrodoc)
